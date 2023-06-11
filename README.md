@@ -1,4 +1,4 @@
-# Leaf Image Classification with Automatic Model Selection
+# Leaf Image Classification with Automatic Model Selection using Keras Tuner
 Implements a fast and scaleable Convolutional Neural Network to classify 11 types of plant leaves using TF.
 
 ### For the project evaluation, kindly run [this notebook](https://github.com/shihab1h/leaf_image_classification/blob/551db37668677dec419e6ab59ab6c98ca13fad8b/Model_2%20Automatic%20Model%20Selection%20for%20Hyperparameter%20Tuning/Leaf_Image_Classification_TF_Auto_Model_Selection_USE_ORIGINAL_DATASET.ipynb).
