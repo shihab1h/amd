@@ -8,20 +8,20 @@ Implements a fast and scaleable Convolutional Neural Network to classify 11 type
 * _To avoid mounting Google Drive_, set the variable SAVE_TO_DRIVE to False
 
 ### Summary of Performance
-The model achieves a test accuracy of 96% (at times 98%, see the other notebook in Model_2 folder; this is due to the different trials run in tuner.search())
+The model achieves a test accuracy of 98%. For other runs of the model see the other notebook in Model_1 and Model_2 folder; this is due to the different trials run in tuner.search() and a different manual structure based on previous experience)
 
 ![training_history](https://github.com/shihab1h/leaf_image_classification/blob/main/Screenshots/training_hist.png)
 
 <br/>  
 
-It guesses 53 out of the 55 test images correctly, and the errors are not concentrated on one mismatched pair
+It guesses 54 out of the 55 test images correctly, and the errors are not concentrated on one mismatched pair.
 
 ![confusion_matrix](https://github.com/shihab1h/leaf_image_classification/blob/main/Screenshots/confusion_matrix.png)
 
 ### Details for Ease of Use
-* The zipped model in this folder is the one obtained by running the Leaf_..._USE_ORIGINAL_DATASET.ipynb notebook on 11 June 2023
+* The zipped model in this folder is the one obtained by running the Leaf_..._USE_ORIGINAL_DATASET.ipynb notebook on 12 June 2023
 * If saving time is important to you, set **DATASET_FROM_SCRATCH = False** and download this [preprocessed dataset](https://drive.google.com/file/d/1-4TO3iKRtXi7S08Q7Aghaq8Us004uxkW/view?usp=sharing) from my Google Drive. Then drag the zipped file into the ./content in the Colab workspace
-* Each epoch of fitting takes less than 10 seconds with Colab's free T4 GPU
+* Each epoch of fitting takes about 6-8 seconds with Colab's free T4 GPU
 * The fitting function will train up to 100 epochs, but has an Early Stop callback allowing it to stop earlier if the val_loss does not improve for 5 consecutive epochs after the 50th epoch. The best weights are restored.
 
 ### Automatic Model Selection
