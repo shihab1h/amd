@@ -10,13 +10,13 @@ Implements a fast and scaleable Convolutional Neural Network to classify 11 type
 ### Summary of Performance
 The model achieves a test accuracy of 96% (at times 98%, see the other notebook in Model_2 folder; this is due to the different trials run in tuner.search())
 
-![training_history](https://github.com/shihab1h/leaf_image_classification/blob/main/Screenshots/acc_loss_epochs.png)
+![training_history](https://github.com/shihab1h/leaf_image_classification/blob/main/Screenshots/training_hist.png)
 
 <br/>  
 
 It guesses 53 out of the 55 test images correctly, and the errors are not concentrated on one mismatched pair
 
-![confusion_matrix](https://github.com/shihab1h/leaf_image_classification/blob/main/Screenshots/cm.png)
+![confusion_matrix](https://github.com/shihab1h/leaf_image_classification/blob/main/Screenshots/confusion_matrix.png)
 
 ### Details for Ease of Use
 * The zipped model in this folder is the one obtained by running the Leaf_..._USE_ORIGINAL_DATASET.ipynb notebook on 11 June 2023
