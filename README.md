@@ -1,9 +1,22 @@
 # Leaf Image Classification with Automatic Model Selection using Keras Tuner
 Implements a fast and scaleable Convolutional Neural Network to classify 11 types of plant leaves using TF.
+<br/>  
+![leaves](https://github.com/shihab1h/leaf_image_classification/blob/main/Screenshots/leaves.png)
 
 ### For the project evaluation, kindly run [this notebook](https://github.com/shihab1h/leaf_image_classification/blob/551db37668677dec419e6ab59ab6c98ca13fad8b/Model_2%20Automatic%20Model%20Selection%20for%20Hyperparameter%20Tuning/Leaf_Image_Classification_TF_Auto_Model_Selection_USE_ORIGINAL_DATASET.ipynb).
 * It downloads the data from the original source, _it will prompt user to upload Kaggle Credentials JSON file_
 * _To avoid mounting Google Drive_, set the variable SAVE_TO_DRIVE to False
+
+### Summary of Performance
+The model achieves a test accuracy of 96% (at times 98%, see the other notebook in Model_2 folder; this is due to the different trials run in tuner.search())
+
+![training_history](https://github.com/shihab1h/leaf_image_classification/blob/main/Screenshots/acc_loss_epochs.png)
+
+<br/>  
+
+It guesses 53 out of the 55 test images correctly, and the errors are not concentrated on one mismatched pair
+
+![confusion_matrix](https://github.com/shihab1h/leaf_image_classification/blob/main/Screenshots/cm.png)
 
 ### Details for Ease of Use
 * The zipped model in this folder is the one obtained by running the Leaf_..._USE_ORIGINAL_DATASET.ipynb notebook on 11 June 2023
