@@ -3,7 +3,7 @@ Implements a fast and scaleable Convolutional Neural Network to classify 11 type
 <br/>  
 ![leaves](https://github.com/shihab1h/leaf_image_classification/blob/main/Screenshots/leaves.png)
 
-### For the project evaluation, kindly run [this notebook](https://github.com/shihab1h/leaf_image_classification/blob/551db37668677dec419e6ab59ab6c98ca13fad8b/Model_2%20Automatic%20Model%20Selection%20for%20Hyperparameter%20Tuning/Leaf_Image_Classification_TF_Auto_Model_Selection_USE_ORIGINAL_DATASET.ipynb).
+### For the project evaluation, kindly run [this notebook](https://github.com/shihab1h/leaf_image_classification/blob/main/Leaf_Image_Classification_TF_Auto_Model_Selection_USE_ORIGINAL_DATASET.ipynb).
 * It downloads the data from the original source, _it will prompt user to upload Kaggle Credentials JSON file_
 * _To avoid mounting Google Drive_, set the variable SAVE_TO_DRIVE to False
 
